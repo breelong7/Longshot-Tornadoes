@@ -56,6 +56,19 @@ o	Think about facial expressions
 
 A website that will take the user through prompts to use logic decide what type of drink will quench their thirst based on their input (Buzzfeed quiz style). Present one drink recommendation back to the user.
 
+## Stretch goals
+
+•	Hot or cold
+•	Pictures of drinks
+•	Price range
+•	Food options
+•	Location options
+•	Drinking game
+•	Use local storage to allow users to rate drinks
+•	Allergies
+Link to dating site
+
+
 ## Communication plan
 
 Our main channel of communication is a group chat on Slack. 
