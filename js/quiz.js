@@ -1,9 +1,9 @@
 
 var allDrinks = [];
 
-function Drink(drinkName, alcoholicTrueOrFalse){
+function Drink(drinkName, isAlcoholic){
   this.drinkName = drinkName;
-  this.alcoholicTrueOrFalse = alcoholicTrueOrFalse;
+  this.isAlcoholic = isAlcoholic;
 
   allDrinks.push(this);
 }
