@@ -1,24 +1,32 @@
+var allAlcoholicDrinksArr = [];
+var allNonAlcoholicDrinksArr = [];
 
-var allDrinksArr = [];
-
-function Drink(drinkName, isAlcoholic){
+function DrinkBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
   this.isAlcoholic = isAlcoholic;
 
-  allDrinksArr.push(this);
+  allAlcoholicDrinksArr.push(this);
 }
 
-new Drink('Orange Juice', false);
-new Drink('Coca-cola', false);
-new Drink('Iced Tea', false);
-new Drink('Lemonade', false);
-new Drink('La croix', false);
-new Drink('Beer', true);
-new Drink('Whiteclaw', true);
-new Drink('Wine', true);
-new Drink('Margarita', true);
-new Drink('Long Island Iced Tea', true);
+new DrinkBuzz('Beer', true);
+new DrinkBuzz('Whiteclaw', true);
+new DrinkBuzz('Wine', true);
+new DrinkBuzz('Margarita', true);
+new DrinkBuzz('Long Island Iced Tea', true);
 
+function DrinkNoBuzz(drinkName, isAlcoholic) {
+  this.drinkName = drinkName;
+  this.isAlcoholic = isAlcoholic;
+
+  allNonAlcoholicDrinksArr.push(this);
+}
+
+new DrinkNoBuzz('Orange Juice', false);
+new DrinkNoBuzz('Coca-cola', false);
+new DrinkNoBuzz('Iced Tea', false);
+new DrinkNoBuzz('Lemonade', false);
+new DrinkNoBuzz('La croix', false);
+handleClick();
 
 //declare function to generate random drink suggestion
 function random(min, max) {
@@ -29,6 +37,10 @@ function random(min, max) {
 var drinkChoiceContainerEl = document.getElementById('drink-choice-container');
 var alcoholicChoiceEl = document.getElementById('alcoholic');
 var nonAlcoholicChoiceEl = document.getElementById('non-alcoholic');
+var buzzResultEl = document.getElementById('buzzresult');
+var nonBuzzResultEl = document.getElementById('nonbuzzresult');
+
+
 
 
 drinkChoiceContainerEl.addEventListener('click', handleClick);
@@ -36,15 +48,27 @@ drinkChoiceContainerEl.addEventListener('click', handleClick);
 
 function handleClick(e) {
   var drinkChoice = e.target.id;
-  if(drinkChoice === alcoholicChoiceEl){
-    //render alcololic drink from allDrinksArr
+  if (drinkChoice === alcoholicChoiceEl) {
+    //render alcololic drink from allAlcoholicDrinksArr
+    for (var i = 0; i < allAlcoholicDrinksArr.length; i++) {
+      var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
+      alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].name;
+      var h2El = document.createElement('h2');
+      h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt} .`;
+      buzzResultEl.appendChild(h2El);
+    }
 
-  } else if(drinkChoice === nonAlcoholicChoiceEl) {
-  //render non-alcoholic drink choice from allDrinksArr
+  } else if (drinkChoice === nonAlcoholicChoiceEl) {
+    //render non-alcoholic drink choice from allNonAlcoholicDrinksArr
+    for (var j = 0; j < allNonAlcoholicDrinksArr.length; j++) {
+      var randomIndex2 = random(0, allNonAlcoholicDrinksArr.length - 1);
+      nonAlcoholicChoiceEl.alt = allNonAlcoholicDrinksArr[randomIndex2].name;
+      var h3El = document.createElement('h2');
+      h2El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt} .`;
+      nonBuzzResultEl.appendChild(h3El);
+    }
+    //append to DOM
   }
-  //append to DOM
+
 }
-
 handleClick();
-
-
