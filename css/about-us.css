@@ -1,0 +1,25 @@
+#aboutus-container {
+  border: 4px solid rgb(235, 53, 44);
+  border-radius: 10px;
+  min-height: 425px;
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+}
+
+img {
+  height: 275px;
+  border: 4px solid rgb(213, 161, 20);
+  margin: 1em;
+  padding: 1em;
+  float: left;
+}
+
+p {
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+  float: left;
+  margin-bottom: 10px;
+}
