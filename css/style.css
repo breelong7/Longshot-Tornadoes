@@ -55,6 +55,10 @@ nav ul li {
     margin-left: 15px;
     font-weight: 600;
     text-align: right;
+    max-width:200px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), #fff);
 }
 header nav {
     display: inline-block;

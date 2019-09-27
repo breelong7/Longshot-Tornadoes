@@ -1,17 +1,14 @@
-img {
+main img {
   height: 180px;
   width: 180px;
   border: 3px solid gray;
   border-radius: 5px;
   margin: 0px 0px 8px;
   background-color: violet;
-  
 }
-
 img:hover {
   opacity:0.8;
 }
-
 h1 {
 font-size:30px;
 font-family: Georgia,sans-serif;
@@ -19,8 +16,3 @@ font-weight:700;
 color:#3b9370;
 }
 
-header {
-font-size:45px;
-font-weight:700;
-color:black;
-}
