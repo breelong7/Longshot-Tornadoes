@@ -9,38 +9,103 @@
   <title>Buzzedfeed</title>
 </head>
 <body>
-  <header>Drink Recipes</header>
+  <header><img id="imgheader" src="img/drinkrecipe.jpg"><h1>Drink Recipes</h1></header>
   <main>
-    <div>Non Alcoholic</div>
-    <ul>
-      <li>Orange Juice</li>
-      <li><img id="Non-alcoholic" src="img/LaCroix.jpg" tile="Sparking Water">Coca-cola</li>
-      <li>Lemonage</li>
-      <li><img id="Non-alcoholic" src="img/lemon-Iced-Tea.jpg" tile="Sweet Lemon Iced Tea">Lemon Iced Tea</li>
-      <li><img id="Non-alcoholic" src="img/Coffee.jpg" tile="Cup of hot Coffee">Coffee</li>
-      <li><img id="Non-alcoholic" src="img/IcedTea.jpg" tile="Cold Tea">Iced Tea</li>
-      <li><img id="Non-alcoholic" src="img/LaCroix.jpg" tile="Sparking Water">La croix</li>
-
-    </ul>
-    <div>Alcoholic</div>
-    <ul>
-      
-      <li>Vodka</li>
-      <li>Whiteclaw</li>
-      <li>Wine</li>
-      <li>Margarita</li>
-      <li>Martini</li>
-      <li></li>
-<div>Cocktail Recipes</div>
-<ul>
-  <li><img id="nonAlcohol" src="img/RoyRogersDrink.jpg" title="Non-alcoholic, Cola, grenadine syrup, garnished with a maraschino cherry.">Roy Rogers</li>
-  <li><img id="nonAlcohol" src="img/Alnord Palmer.jpg" title="Non-alcoholic, Iced tea, lemonade">Alnord Palmer</li>
-  <li><img id="nonAlcohol" src="img/LLB.jpg" title="Non-alcoholic, Lemon, lime and bitters">LLB</img>
-  <img id="Alcoholic" src="img/Margaritacocktail.jpg" title="Alcoholic, Tequilla, Cointreau, Lime Juice ">Margarita Cocktail</li>
-  <li><img id="Alcoholic" src="img/Long_Island_Iced_Teas.jpg" title="Alcoholic, Gin, Tequilla, Rum and Triple sec">Long Island Iced Tea</li>
-  <li><img id="Alcoholic" src="img/Tequila_Sunrise_glass.jpg" title="Alcoholic, Tequilla, Orange juice and Grenadine syrup">Tequilla Sunrise Glass</li>
-</ul>
-</main>
+    <div class="nonAlcohol"><h2>Non Alcoholic</h2>
+      <ul>
+        <li><img id="Non-alcoholic" src="img/orangejuice.jpg" title="orangejuice">Orange Juice</li>
+        <li><img id="Non-alcoholic" src="img/Coca-Cola-Classic-Small.jpg" tile="Coca cola">Coca-cola</li>
+        <li><img id="Non-alcoholic" src="img/limonade.jpg" title="lemonade">Lemonage</li>
+        <li><img id="Non-alcoholic" src="img/lemon-Iced-Tea.jpg" tile="Sweet Lemon Iced Tea">Lemon Iced Tea</li>
+        <li><img id="Non-alcoholic" src="img/Coffee.jpg" tile="Cup of hot Coffee">Coffee</li>
+        <li><img id="Non-alcoholic" src="img/IcedTea.jpg" tile="Cold Tea">Iced Tea</li>
+        <li><img id="Non-alcoholic" src="img/LaCroix.jpg" tile="Sparking Water">La croix</li>
+      </ul>
+    </div>
+    <div class="Alcoholic"><h2>Alcoholic</h2>
+       <ul>
+        <li><img id="Alcoholic" src="img/vodka.jpg" title="vodka">Vodka</li>
+        <li><img id="Alcoholic" src="img/whiteclaw.jpg" title="whiteclaw">Whiteclaw</li>
+        <li><img id="Alcoholic" src="img/wine.jpg" title="wine">Wine</li>
+        <li><img id="Alcoholic" src="img/margarita.jpg" title="margarita">Margarita</li>
+        <li><img id="Alcoholic" src="img/martini.jpg" title="martini">Martini</li>
+        <li><img id="Alcoholic" src="img/beers.jpg" title="beers">Martini</li>
+       </ul>
+    </div>
+    <div class="Cocktail">
+      <h2 id="second">Cocktail Recipes</h2>
+      <p>  </p>
+      <div id="cocktailrecipes">
+      <ul>
+        <li class="rcp">
+          <div class="cocktaildrink">
+            <div class="rcp_cocktdrink">
+              <img id="nonAlcohol" src="img/RoyRogersDrink.jpg" title="Non-alcoholic">
+              <h3 class="recipiename">Roy Rogers</h3>
+            </div>
+            <h4 class="rcptxt">
+              "Non-alcoholic, Cola, grenadine syrup, garnished with a maraschino cherry."
+            </h4>
+          </div>
+        </li> 
+        <li class="rcp">
+            <div class="cocktaildrink">
+              <div class="rcp_cocktdrink">
+                <img id="nonAlcohol" src="img/Alnord Palmer.jpg" title="Non-alcoholic">
+                <h3 class="recipiename">Arnold Palmer</h3>
+              </div>
+              <h4 class="rcptxt">
+                "Non-alcoholic, Iced tea, lemonade."
+              </h4>
+            </div>
+        </li> 
+        <li class="rcp">
+              <div class="cocktaildrink">
+                <div class="rcp_cocktdrink">
+                  <img id="nonAlcohol" src="img/LLB.jpg" title="Non-alcoholic">
+                  <h3 class="recipiename">LLB</h3>
+                </div>
+                <h4 class="rcptxt">
+                  "Non-alcoholic, Lemon, lime and bitters."
+                </h4>
+              </div>
+        </li>   
+        <li class="rcp">
+            <div class="cocktaildrink">
+              <div class="rcp_cocktdrink">
+                  <img id="Alcoholic" src="img/Margaritacocktail.jpg" title="Alcoholic">
+                  <h3 class="recipiename">Margarita Cocktail</h3>
+                </div>
+                <h4 class="rcptxt">
+                  "Alcoholic, Tequilla, Cointreau, Lime Juice "
+                </h4>
+            </div>
+        </li>   
+        <li class="rcp">
+            <div class="cocktaildrink">
+              <div class="rcp_cocktdrink">
+                <img id="Alcoholic" src="img/Long_Island_Iced_Teas.jpg" title="Alcoholic">
+                <h3 class="recipiename">Long Island Iced Tea</h3>
+              </div>
+              <h4 class="rcptxt">
+                  "Alcoholic, Gin, Tequilla, Rum and Triple sec."
+              </h4>
+            </div>
+        </li> 
+        <li class="rcp">
+            <div class="cocktaildrink">
+              <div class="rcp_cocktdrink">
+                <img id="Alcoholic" src="img/Tequila_Sunrise_glass.jpg" title="Alcoholic">
+                <h3 class="recipiename">Teqilla Sunrise Glass</h3>
+              </div>
+              <h4 class="rcptxt">
+                "Alcoholic, Tequilla, Orange juice and Grenadine syrup."
+              </h4>
+            </div>
+        </li> 
+      </ul>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>
