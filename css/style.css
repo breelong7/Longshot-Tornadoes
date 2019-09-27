@@ -1,0 +1,76 @@
+/* The style.css file acts as global header & background styling for each page. Ensure the style.css file is linked to each page (About us, Drink Recipes. & Quiz), under the reset.css but before that page's individual .css file  */
+
+html, main, footer {
+    background: rgb(244, 244, 244);
+    margin-top: 50px;
+}
+header{
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px 8px lightgrey;;
+    position: fixed;
+    top:0;
+}
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(235, 53, 44);
+    font-size: 30px;
+    font-weight: 650;
+    letter-spacing: -1px;;
+    text-align: center
+}
+span.d{
+    font-size: 23px;
+    font-weight: 720;
+    text-transform: uppercase;
+}
+.circle-logo {
+    height: 40px;
+    background-color: rgb(235, 53, 44);
+    border-radius: 50%;
+    filter: contrast(1);
+    transform: rotate(35deg);
+    padding: 2px;
+}
+.motto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8pt;
+    width: 183px;
+    overflow-wrap: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+header img, .logo-wrap{
+    display: inline-block;
+}
+nav ul li {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-left: 15px;
+    font-weight: 600;
+    text-align: right;
+}
+header nav {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 10%;
+}
+nav ul li a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+nav ul li a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+nav ul li a:hover {
+    color: rgb(26, 105, 235);
+    text-decoration: none;
+  }
+  
