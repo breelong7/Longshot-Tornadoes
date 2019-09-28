@@ -1,6 +1,13 @@
 var allAlcoholicDrinksArr = [];
 var allNonAlcoholicDrinksArr = [];
 
+function refreshPage(){
+  window.location.reload();
+} 
+
+
+
+
 function DrinkBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
   this.isAlcoholic = isAlcoholic;
