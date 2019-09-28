@@ -4,7 +4,7 @@ main img {
   border: 3px solid gray;
   border-radius: 5px;
   margin: 0px 0px 8px;
-  background-color: violet;
+  background-color: #202020;
 }
 img:hover {
   opacity:0.8;
