@@ -3,7 +3,7 @@ var allNonAlcoholicDrinksArr = [];
 
 function refreshPage(){
   window.location.reload();
-} 
+}
 
 
 
@@ -57,16 +57,17 @@ nonAlcoholicChoiceEl.addEventListener('click', handleClick);
 
 function handleClick(e) {
   console.log('event target id:', e.target.id);
+
   if (e.target.id === 'alcoholic') {
     //render alcoholic drink from allAlcoholicDrinksArr
     for (var i = 0; i < allAlcoholicDrinksArr.length; i++) {
       var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
       alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].drinkName;
-
+      
     }
     console.log('event', event);
     var h2El = document.createElement('h2');
-    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt} .`;
+    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt}.`;
     buzzResultEl.appendChild(h2El);
 
   } else if (e.target.id === 'non-alcoholic') {
@@ -76,10 +77,10 @@ function handleClick(e) {
       nonAlcoholicChoiceEl.alt = allNonAlcoholicDrinksArr[randomIndex2].drinkName;
     }
     var h3El = document.createElement('h2');
-    h3El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt} .`;
+    h3El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt}.`;
     nonBuzzResultEl.appendChild(h3El);
+
     //append to DOM
   }
 
 }
-
