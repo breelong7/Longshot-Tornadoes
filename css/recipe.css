@@ -21,6 +21,7 @@
   width: 160px;
   margin-top: 0px;
   border-radius: 5px;
+
  }
   
   #top {
@@ -45,6 +46,7 @@
   position: relative;
   animation-duration: 20s;
   animation-iteration-count:infinite;
+
 }
 
 @keyframes imgtop {
