@@ -1,0 +1,58 @@
+main section {
+    padding: 7%;
+}
+.instructions,.quiz-type, .subtext {
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    height: 25%;
+    margin-bottom: .5rem;
+}
+.instructions{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: left;
+    padding-top: 5%;
+    overflow: wrap;
+    line-height: 1.2;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.quiz-type{
+    background: gray;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    padding: 4px 8px;    
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    width: 40px;
+    height: 10px;
+}
+.quiz-type:hover {
+    background: black;
+}
+.subtext{
+display: inline;
+}
+#non-alcoholic, #alcoholic{
+    height: 45%;
+    min-height: 200px;
+    width: 47%;
+    min-width: 200px;
+    padding: .11rem;
+    pointer-events: painted;
+    background: transparent;
+}
+div {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#non-alcoholic:active{
+    background: rgb(235, 53, 44);
+}

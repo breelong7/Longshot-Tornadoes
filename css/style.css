@@ -1,5 +1,7 @@
 /* The style.css file acts as global header & background styling for each page. Ensure the style.css file is linked to each page (About us, Drink Recipes. & Quiz), under the reset.css but before that page's individual .css file  */
-
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 html, main, footer {
     background: rgb(244, 244, 244);
     margin-top: 50px;
@@ -14,9 +16,9 @@ header{
     box-shadow: 2px 2px 8px lightgrey;;
     position: fixed;
     top:0;
+    z-index: 999;
 }
 .logo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(235, 53, 44);
     font-size: 30px;
     font-weight: 650;
@@ -37,7 +39,6 @@ span.d{
     padding: 2px;
 }
 .motto {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 8pt;
     width: 183px;
     overflow-wrap: normal;
@@ -49,16 +50,13 @@ header img, .logo-wrap{
 }
 nav ul li {
     display: inline-block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
     float: right;
     margin-left: 15px;
     font-weight: 600;
     text-align: right;
     max-width:200px;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    background: -webkit-linear-gradient(rgb(255, 255, 255), #fff);
+    overflow: hidden;
 }
 header nav {
     display: inline-block;
