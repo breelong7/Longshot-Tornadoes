@@ -1,3 +1,41 @@
+'use strict'
+
+var legendEl = document.getElementById('legend');
+var labelEl = document.getElementById('label');
+var formEl = document.getElementById('whats-your-name');
+
+if(localStorage.length === 0){
+  legendEl.textContent = 'Welcome to BuzzedFeed, where we understand that you\'re far too indecisive to choose your own drink.';
+  formEl.appendChild(legendEl);
+  labelEl.textContent = 'Let\'s be friends. What\'s your name?';
+  formEl.appendChild(labelEl);
+
+  function addFriend(event){
+    event.preventDefault();
+    var newName = event.target.username.value
+    // Stringify
+    var stringifyedName = JSON.stringify(newName);
+    // local storage set item
+    localStorage.setItem('name', stringifyedName);
+    console.log('setting a name in LS');
+  }
+  formEl.addEventListener('submit', addFriend);
+} else {
+  console.log("something's in LS");
+  //get name
+  var localStorageName = localStorage.getItem('name');
+  console.log('name stored in local storage', localStorageName);
+  // json Parse
+  var parsedName = JSON.parse(localStorageName);
+  var slicedName = parsedName.slice(0);
+  //new text generation
+  legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just retake the quiz!`;
+  formEl.appendChild(legendEl);
+
+  labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
+  formEl.appendChild(labelEl);
+}
+
 var allAlcoholicDrinksArr = [];
 var allNonAlcoholicDrinksArr = [];
 
