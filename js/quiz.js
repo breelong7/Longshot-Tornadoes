@@ -66,7 +66,7 @@ function handleClick(e) {
     }
     console.log('event', event);
     var h2El = document.createElement('h2');
-    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt} .`;
+    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt}.`;
     buzzResultEl.appendChild(h2El);
 
   } else if (e.target.id === 'non-alcoholic') {
@@ -76,7 +76,7 @@ function handleClick(e) {
       nonAlcoholicChoiceEl.alt = allNonAlcoholicDrinksArr[randomIndex2].drinkName;
     }
     var h3El = document.createElement('h2');
-    h3El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt} .`;
+    h3El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt}.`;
     nonBuzzResultEl.appendChild(h3El);
     //append to DOM
   }
