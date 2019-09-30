@@ -56,3 +56,51 @@ div {
 #non-alcoholic:active, #alcoholic:active{
     background: rgb(235, 53, 44);
 }
+form {
+    color: black;
+    text-align: left;
+  }
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+  input[type=submit] {
+    background-color: rgb(148, 66, 42);
+    border: solid 1px white;
+    color: white;
+    font-weight: bold;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    margin-bottom: 3%;
+    box-shadow: 0 7px gray;
+    border-radius: 15px;
+  }
+input[type=submit]:hover {
+    background-color: rgb(88, 38, 23);
+  }
+input[type=submit]:active {
+    background-color: rgb(88, 38, 23);
+    box-shadow: 0 4px rgba(102, 102, 102, 0.678);
+    transform: translateY(2px);
+  }
+legend{
+    font-weight: bold;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    margin: 0px 0px 5% 0px;
+    overflow: hidden;
+  }
+  label{
+    position: absolute;
+    top: 15px;
+    margin: 10px 0px 0px 0px;
+  } 
+  form{
+    position: relative;
+  }
+  input{
+    margin: 7% 0px 0px 0px;
+  }
