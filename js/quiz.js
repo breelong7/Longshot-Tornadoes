@@ -63,6 +63,7 @@ new DrinkBuzz('Long Island Iced Tea', true);
 function DrinkNoBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
   this.isAlcoholic = isAlcoholic;
+  this.src = `img/${drinkName}.jpg`;
 
   allNonAlcoholicDrinksArr.push(this);
 }
@@ -104,6 +105,7 @@ function handleClick(e) {
       var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
       alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].drinkName;
       alcoholicChoiceImgEl.src = allAlcoholicDrinksArr[randomIndex].src;
+      
       console.log('alcoholic choice image', alcoholicChoiceImgEl);
     }
     console.log('event', event);
@@ -113,9 +115,6 @@ function handleClick(e) {
 
     alcoholicChoiceImgEl.textContent = `${alcoholicChoiceImgEl.src}`;
     buzzResultEl.appendChild(alcoholicChoiceImgEl);
-    // var pictureEl = document.createElement('IMG');
-    // alcoholicChoiceImgEl.setAttribute('src', alcoholicChoiceImgEl.src);
-    // alcoholicChoiceImgEl.appendChild(pictureEl);
 
 
   } else if (e.target.id === 'non-alcoholic') {
@@ -123,12 +122,15 @@ function handleClick(e) {
     for (var j = 0; j < allNonAlcoholicDrinksArr.length; j++) {
       var randomIndex2 = random(0, allNonAlcoholicDrinksArr.length - 1);
       nonAlcoholicChoiceEl.alt = allNonAlcoholicDrinksArr[randomIndex2].drinkName;
+      nonAlcoholicChoiceImgEl.src = allNonAlcoholicDrinksArr[randomIndex2].src;
     }
     var h3El = document.createElement('h2');
     h3El.textContent = `Your lucky buzz free drink is ${nonAlcoholicChoiceEl.alt}.`;
     nonBuzzResultEl.appendChild(h3El);
 
-    //append to DOM
+    nonAlcoholicChoiceImgEl.textContent = `${nonAlcoholicChoiceImgEl.src}`;
+    nonBuzzResultEl.appendChild(nonAlcoholicChoiceImgEl);
+
   }
 
 }
