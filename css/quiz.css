@@ -93,11 +93,11 @@ legend{
     margin: 0px 0px 5% 0px;
     overflow: hidden;
   }
-  label{
+  /* label{
     position: absolute;
     top: 15px;
     margin: 10px 0px 0px 0px;
-  } 
+  }  */
   form{
     position: relative;
   }
@@ -109,7 +109,7 @@ legend{
 }
 #na-radio, #a-radio {
     visibility: hidden;
-}
+} 
 button {
     background-color: rgb(235, 53, 44);
     border: none;
