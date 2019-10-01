@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var legendEl = document.getElementById('legend');
 var labelEl = document.getElementById('label');
@@ -10,16 +10,7 @@ if(localStorage.length === 0){
   labelEl.textContent = 'Let\'s be friends. What\'s your name?';
   formEl.appendChild(labelEl);
 
-  function addFriend(event){
-    event.preventDefault();
-    var newName = event.target.username.value
-    // Stringify
-    var stringifyedName = JSON.stringify(newName);
-    // local storage set item
-    localStorage.setItem('name', stringifyedName);
-    console.log('setting a name in LS');
-  }
-  formEl.addEventListener('submit', addFriend);
+
 } else {
   console.log("something's in LS");
   //get name
@@ -35,6 +26,19 @@ if(localStorage.length === 0){
   labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
   formEl.appendChild(labelEl);
 }
+
+function addFriend(event){
+  event.preventDefault();
+  var newName = event.target.username.value
+  // Stringify
+  var stringifyedName = JSON.stringify(newName);
+  // local storage set item
+  localStorage.setItem('name', stringifyedName);
+  console.log('setting a name in LS');
+}
+formEl.addEventListener('submit', addFriend);
+
+
 
 var allAlcoholicDrinksArr = [];
 var allNonAlcoholicDrinksArr = [];
