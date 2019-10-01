@@ -9,8 +9,6 @@ if(localStorage.length === 0){
   formEl.appendChild(legendEl);
   labelEl.textContent = 'Let\'s be friends. What\'s your name?';
   formEl.appendChild(labelEl);
-
-
 } else {
   console.log("something's in LS");
   //get name
@@ -22,7 +20,7 @@ if(localStorage.length === 0){
   //new text generation
   legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just retake the quiz!`;
   formEl.appendChild(legendEl);
-
+  
   labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
   formEl.appendChild(labelEl);
 }
@@ -37,8 +35,6 @@ function addFriend(event){
   console.log('setting a name in LS');
 }
 formEl.addEventListener('submit', addFriend);
-
-
 
 var allAlcoholicDrinksArr = [];
 var allNonAlcoholicDrinksArr = [];
