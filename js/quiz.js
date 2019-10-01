@@ -49,6 +49,7 @@ function refreshPage(){
 function DrinkBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
   this.isAlcoholic = isAlcoholic;
+  this.src = `img/${drinkName}.jpg`;
 
   allAlcoholicDrinksArr.push(this);
 }
@@ -85,7 +86,8 @@ var alcoholicChoiceEl = document.getElementById('alcoholic');
 var nonAlcoholicChoiceEl = document.getElementById('non-alcoholic');
 var buzzResultEl = document.getElementById('buzzresult');
 var nonBuzzResultEl = document.getElementById('nonbuzzresult');
-
+var alcoholicChoiceImgEl = document.getElementById('buzzresultimage');
+var nonAlcoholicChoiceImgEl = document.getElementById('nonbuzzresultimage');
 
 alcoholicChoiceEl.addEventListener('click', handleClick);
 nonAlcoholicChoiceEl.addEventListener('click', handleClick);
@@ -101,12 +103,20 @@ function handleClick(e) {
     for (var i = 0; i < allAlcoholicDrinksArr.length; i++) {
       var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
       alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].drinkName;
-      
+      alcoholicChoiceImgEl.src = allAlcoholicDrinksArr[randomIndex].src;
+      console.log('alcoholic choice image', alcoholicChoiceImgEl);
     }
     console.log('event', event);
     var h2El = document.createElement('h2');
-    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt}.`;
+    h2El.textContent = `Your lucky drink is ${alcoholicChoiceEl.alt}`;
     buzzResultEl.appendChild(h2El);
+
+    alcoholicChoiceImgEl.textContent = `${alcoholicChoiceImgEl.src}`;
+    buzzResultEl.appendChild(alcoholicChoiceImgEl);
+    // var pictureEl = document.createElement('IMG');
+    // alcoholicChoiceImgEl.setAttribute('src', alcoholicChoiceImgEl.src);
+    // alcoholicChoiceImgEl.appendChild(pictureEl);
+
 
   } else if (e.target.id === 'non-alcoholic') {
     //render non-alcoholic drink choice from allNonAlcoholicDrinksArr
