@@ -42,7 +42,7 @@ p {
   width: 250px;
   height: 250px;
   perspective: 1000px; 
-  margin-top: 15%;
+  margin-top: 17%;
 }  
 /* 2nd div DIV 2*/
 .card-inner-first {
@@ -137,7 +137,7 @@ p {
   width: 325px;
   height: 250px;
   perspective: 1000px; 
-  margin-top: 15%;
+  margin-top: 3%;
 }  
 /* 2nd div DIV 2*/
 .card-inner-third {
@@ -155,13 +155,13 @@ p {
 /* front & back DIV 4 & DIV 3 */
 .card-front-third, .card-back-third {
   position: absolute;
-  width: 325px;
-  height: 225px;
+  width: 250px;
+  height: 900px;
   backface-visibility: hidden;
 }
 /* card front DIV 4 */
 .card-front-third {
-  background: lightblue;
+  background: transparent;
   color: black;
 }
 /* card back DIV 3*/
@@ -186,7 +186,7 @@ p {
   width: 250px;
   height: 250px;
   perspective: 1000px; 
-  margin-top: 15%;
+  margin-top: 7%;
 }  
 /* 2nd div DIV 2*/
 .card-inner-fourth {
@@ -204,8 +204,8 @@ p {
 /* front & back DIV 4 & DIV 3 */
 .card-front-fourth, .card-back-fourth {
   position: absolute;
-  width: 250px;
-  height: 900px;
+  width: 325px;
+  height: 225px;
   backface-visibility: hidden;
 }
 /* card front DIV 4 */
@@ -220,3 +220,28 @@ p {
   transform: rotateY(180deg);
   margin-top: 5%;
 }
+
+
+.first-card, .second-card{
+  display: inline-block;
+}
+.third-card, .fourth-card{
+  display: inline-block;
+} 
+
+.first-card{
+  float: left;
+  margin-left: 30%;
+}
+.second-card{
+  float: right;
+  margin-right: 30%;
+}
+.third-card {
+  float: left;
+  margin-left: 27%;
+}
+  .fourth-card{
+    float: right;
+    margin-right: 27.5%; 
+  }
