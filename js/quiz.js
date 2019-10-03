@@ -2,7 +2,8 @@
 
 var legendEl = document.getElementById('legend');
 var labelEl = document.getElementById('label');
-var formEl = document.getElementById('whats-your-name');
+var formEl = document.getElementById('container1');
+var submitEl = document.getElementById('container2');
 
 if(localStorage.length === 0){
   legendEl.textContent = 'Welcome to BuzzedFeed, where we understand that you\'re far too indecisive to choose your own drink.';
@@ -10,7 +11,6 @@ if(localStorage.length === 0){
   labelEl.textContent = 'Let\'s be friends. What\'s your name?';
   formEl.appendChild(labelEl);
 
-  formEl.addEventListener('submit', addFriend);
 } else {
   console.log("something's in LS");
   //get name
@@ -20,9 +20,8 @@ if(localStorage.length === 0){
   var parsedName = JSON.parse(localStorageName);
   var slicedName = parsedName.slice(0);
   //new text generation
-  legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just retake the quiz!`;
+  legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just take the quiz!`;
   formEl.appendChild(legendEl);
-  
   labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
   formEl.appendChild(labelEl);
 }
@@ -35,16 +34,17 @@ function addFriend(event){
   // local storage set item
   localStorage.setItem('name', stringifyedName);
   console.log('setting a name in LS');
+  refreshPage();
 }
+
+submitEl.addEventListener('submit', addFriend);
+
 var allAlcoholicDrinksArr = [];
 var allNonAlcoholicDrinksArr = [];
 
 function refreshPage(){
   window.location.reload();
 }
-
-
-
 
 function DrinkBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
@@ -59,6 +59,10 @@ new DrinkBuzz('Whiteclaw', true);
 new DrinkBuzz('Wine', true);
 new DrinkBuzz('Margarita', true);
 new DrinkBuzz('Long Island Iced Tea', true);
+new DrinkBuzz('Lemon Lime and Bitters', true);
+new DrinkBuzz('Martini', true);
+new DrinkBuzz('Tequila Sunrise', true);
+new DrinkBuzz('Vodka', true);
 
 function DrinkNoBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
@@ -73,6 +77,9 @@ new DrinkNoBuzz('Coca-cola', false);
 new DrinkNoBuzz('Iced Tea', false);
 new DrinkNoBuzz('Lemonade', false);
 new DrinkNoBuzz('La croix', false);
+new DrinkNoBuzz('Arnold Palmer', false);
+new DrinkNoBuzz('Coffee', false);
+new DrinkNoBuzz('Roy Rogers', false);
 
 
 //declare function to generate random drink suggestion

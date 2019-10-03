@@ -26,23 +26,105 @@
             </ul>
           </nav>
         </header>
-        <div class="grid">
-                <div id="quiz">
-                    <h1>Drinking Quiz</h1>
-                    <hr style="margin-bottom: 20px">
-                    <p id="question"></p>
-                    <div class="buttons">
-                        <button id="btn0"><span id="choice0"></span></button>
-                        <button id="btn1"><span id="choice1"></span></button>
-                        <button id="btn2"><span id="choice2"></span></button>
-                        <button id="btn3"><span id="choice3"></span></button>
-                    </div>
-                    <hr style="margin-top: 50px">
-                </div>
-            </div>
+
+        <h2 class="quizHeader">Take a Buzzed Quiz</h2>
+  
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1.Which country consumes the most amount of alcohol per capita?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question1" value="1">
+	        <label id="correctString1">Tunisia</label>
+	    	<br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Albania</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Belarus</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Thailand</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2. What is the world's most popular cuisine?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Indian</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="1">
+	        <label id="correctString2">Italian</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Mexican</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Chinese</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. World's most popular beverage?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Coffee</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="1">
+	        <label id="correctString3">Tea</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Beer</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Orange Juice</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. What state has the most bars per capita?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>Montana</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="1">
+	        <label id="correctString4">North Dakota</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>California</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>New Jersey</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitAnswer()"
+          type="submit" value="Submit" />
+    </div>
+  
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+       
 </body>
 <footer>
-        <p id="progress">Question x of y</p>
+       
         <script src="js/game.js"></script>       
       </footer>
 </html>
