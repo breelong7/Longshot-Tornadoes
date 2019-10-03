@@ -141,5 +141,3 @@ function handleClick(e) {
   }
 
 }
-
-
