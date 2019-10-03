@@ -59,6 +59,10 @@ new DrinkBuzz('Whiteclaw', true);
 new DrinkBuzz('Wine', true);
 new DrinkBuzz('Margarita', true);
 new DrinkBuzz('Long Island Iced Tea', true);
+new DrinkBuzz('Lemon Lime and Bitters', true);
+new DrinkBuzz('Martini', true);
+new DrinkBuzz('Tequila Sunrise', true);
+new DrinkBuzz('Vodka', true);
 
 function DrinkNoBuzz(drinkName, isAlcoholic) {
   this.drinkName = drinkName;
@@ -73,6 +77,9 @@ new DrinkNoBuzz('Coca-cola', false);
 new DrinkNoBuzz('Iced Tea', false);
 new DrinkNoBuzz('Lemonade', false);
 new DrinkNoBuzz('La croix', false);
+new DrinkNoBuzz('Arnold Palmer', false);
+new DrinkNoBuzz('Coffee', false);
+new DrinkNoBuzz('Roy Rogers', false);
 
 
 //declare function to generate random drink suggestion
