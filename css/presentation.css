@@ -31,6 +31,7 @@ p {
     margin-right: auto;
     margin-top: 3%;
     margin-bottom: auto;
+    transition-duration: 1s;
 }  
 .card-inner-one {
     position: relative;
@@ -144,6 +145,7 @@ a:link, a:visited, a:hover {
     margin-left: 43%;
     margin-right: auto;
     margin-top: -7%;
+    transition-duration: 1.5s;
     margin-bottom: auto;
 }  
 .card-inner-three {
@@ -186,6 +188,7 @@ a:link, a:visited, a:hover {
     margin-left: 15%;
     margin-right: auto;
     margin-top: 2%;
+    transition-duration: 1.25s;
     margin-bottom: auto;
 }  
 .card-inner-four {
@@ -228,6 +231,7 @@ a:link, a:visited, a:hover {
     margin-left: 58%;
     margin-right: auto;
     margin-top: -6%; 
+    transition-duration: 1.75s;
     margin-bottom: auto;
 }  
 .card-inner-five {
