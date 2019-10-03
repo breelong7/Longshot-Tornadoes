@@ -12,7 +12,7 @@ if(localStorage.length === 0){
   formEl.appendChild(labelEl);
 
 } else {
-  console.log("something's in LS");
+  console.log('something\'s in LS');
   //get name
   var localStorageName = localStorage.getItem('name');
   console.log('name stored in local storage', localStorageName);
@@ -20,6 +20,7 @@ if(localStorage.length === 0){
   var parsedName = JSON.parse(localStorageName);
   var slicedName = parsedName.slice(0);
   //new text generation
+  // eslint-disable-next-line no-useless-escape
   legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just take the quiz!`;
   formEl.appendChild(legendEl);
   labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
@@ -28,7 +29,7 @@ if(localStorage.length === 0){
 
 function addFriend(event){
   event.preventDefault();
-  var newName = event.target.username.value
+  var newName = event.target.username.value;
   // Stringify
   var stringifyedName = JSON.stringify(newName);
   // local storage set item
@@ -112,7 +113,7 @@ function handleClick(e) {
       var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
       alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].drinkName;
       alcoholicChoiceImgEl.src = allAlcoholicDrinksArr[randomIndex].src;
-      
+
       console.log('alcoholic choice image', alcoholicChoiceImgEl);
     }
     console.log('event', event);
