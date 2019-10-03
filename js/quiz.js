@@ -47,40 +47,38 @@ function refreshPage(){
   window.location.reload();
 }
 
-function DrinkBuzz(drinkName, isAlcoholic) {
+function DrinkBuzz(drinkName) {
   this.drinkName = drinkName;
-  this.isAlcoholic = isAlcoholic;
   this.src = `img/${drinkName}.jpg`;
 
   allAlcoholicDrinksArr.push(this);
 }
 
-new DrinkBuzz('Beer', true);
-new DrinkBuzz('Whiteclaw', true);
-new DrinkBuzz('Wine', true);
-new DrinkBuzz('Margarita', true);
-new DrinkBuzz('Long Island Iced Tea', true);
-new DrinkBuzz('Lemon Lime and Bitters', true);
-new DrinkBuzz('Martini', true);
-new DrinkBuzz('Tequila Sunrise', true);
-new DrinkBuzz('Vodka', true);
+new DrinkBuzz('Beer');
+new DrinkBuzz('Whiteclaw');
+new DrinkBuzz('Wine');
+new DrinkBuzz('Margarita');
+new DrinkBuzz('Long Island Iced Tea');
+new DrinkBuzz('Lemon Lime and Bitters');
+new DrinkBuzz('Martini');
+new DrinkBuzz('Tequila Sunrise');
+new DrinkBuzz('Vodka');
 
-function DrinkNoBuzz(drinkName, isAlcoholic) {
+function DrinkNoBuzz(drinkName) {
   this.drinkName = drinkName;
-  this.isAlcoholic = isAlcoholic;
   this.src = `img/${drinkName}.jpg`;
 
   allNonAlcoholicDrinksArr.push(this);
 }
 
-new DrinkNoBuzz('Orange Juice', false);
-new DrinkNoBuzz('Coca-cola', false);
-new DrinkNoBuzz('Iced Tea', false);
-new DrinkNoBuzz('Lemonade', false);
-new DrinkNoBuzz('La croix', false);
-new DrinkNoBuzz('Arnold Palmer', false);
-new DrinkNoBuzz('Coffee', false);
-new DrinkNoBuzz('Roy Rogers', false);
+new DrinkNoBuzz('Orange Juice');
+new DrinkNoBuzz('Coca-cola');
+new DrinkNoBuzz('Iced Tea');
+new DrinkNoBuzz('Lemonade');
+new DrinkNoBuzz('La croix');
+new DrinkNoBuzz('Arnold Palmer');
+new DrinkNoBuzz('Coffee');
+new DrinkNoBuzz('Roy Rogers');
 
 
 //declare function to generate random drink suggestion

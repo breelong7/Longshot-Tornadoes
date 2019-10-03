@@ -9,3 +9,4 @@
 - Icon info:https://www.w3schools.com/tags/att_link_sizes.asp
 - Text along a path (curved text): https://css-tricks.com/snippets/svg/curved-text-along-path/
 - Zoom on hover: https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+- JAVA Script - W3Schools,Stackoverflow,codepen.io,google

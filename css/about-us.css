@@ -19,6 +19,10 @@ main img {
   width: 20%;
   height: auto;
 }
+#james {
+  width: 20%;
+  height: auto;
+}
 p {
   border: 2px solid black;
   margin: 1em;
