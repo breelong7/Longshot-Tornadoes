@@ -1,4 +1,4 @@
-#aboutus-container {
+/* #aboutus-container {
   border: 4px solid rgb(235, 53, 44);
   border-radius: 10px;
   min-height: 725px;
@@ -26,4 +26,193 @@ p {
   width: 250px;
   float: left;
   margin-bottom: 10px;
+} */
+
+#sian{
+  width: 250px;
+  height: 250px;
+}
+/* card outside DIV 1*/
+.first-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  margin-top: 15%;
+}  
+/* 2nd div DIV 2*/
+.card-inner-first {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+/* outside inner DIV 1 & DIV 2*/
+.first-card:hover .card-inner-first {
+  transform: rotateY(180deg);
+}    
+/* front & back DIV 4 & DIV 3 */
+.card-front-first, .card-back-first {
+  position: absolute;
+  width: 250px;
+  height: 225px;
+  backface-visibility: hidden;
+}
+/* card front DIV 4 */
+.card-front-first {
+  background: lightblue;
+  color: black;
+}
+/* card back DIV 3*/
+.card-back-first {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  margin-top: 5%;
+}
+
+
+#bree{
+  width: 250px;
+  height: 350px;
+}
+/* card outside DIV 1*/
+.second-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  margin-top: 15%;
+}  
+/* 2nd div DIV 2*/
+.card-inner-second {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+/* outside inner DIV 1 & DIV 2*/
+.second-card:hover .card-inner-second {
+  transform: rotateY(180deg);
+}    
+/* front & back DIV 4 & DIV 3 */
+.card-front-second, .card-back-second {
+  position: absolute;
+  width: 250px;
+  height: 325px;
+  backface-visibility: hidden;
+}
+/* card front DIV 4 */
+.card-front-second {
+  background: lightblue;
+  color: black;
+}
+/* card back DIV 3*/
+.card-back-second {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  margin-top: 5%;
+}
+
+
+
+
+
+#shubham{
+  width: 325px;
+  height: 250px;
+}
+/* card outside DIV 1*/
+.third-card {
+  background-color: transparent;
+  width: 325px;
+  height: 250px;
+  perspective: 1000px; 
+  margin-top: 15%;
+}  
+/* 2nd div DIV 2*/
+.card-inner-third {
+  position: relative;
+  width: 325px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+/* outside inner DIV 1 & DIV 2*/
+.third-card:hover .card-inner-third {
+  transform: rotateY(180deg);
+}    
+/* front & back DIV 4 & DIV 3 */
+.card-front-third, .card-back-third {
+  position: absolute;
+  width: 325px;
+  height: 225px;
+  backface-visibility: hidden;
+}
+/* card front DIV 4 */
+.card-front-third {
+  background: lightblue;
+  color: black;
+}
+/* card back DIV 3*/
+.card-back-third {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  margin-top: 5%;
+}
+
+
+
+
+
+#james{
+  width: 250px;
+  height: 370px;
+}
+/* card outside DIV 1*/
+.fourth-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  margin-top: 15%;
+}  
+/* 2nd div DIV 2*/
+.card-inner-fourth {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+/* outside inner DIV 1 & DIV 2*/
+.fourth-card:hover .card-inner-fourth {
+  transform: rotateY(180deg);
+}    
+/* front & back DIV 4 & DIV 3 */
+.card-front-fourth, .card-back-fourth {
+  position: absolute;
+  width: 250px;
+  height: 900px;
+  backface-visibility: hidden;
+}
+/* card front DIV 4 */
+.card-front-fourth {
+  background: transparent;
+  color: black;
+}
+/* card back DIV 3*/
+.card-back-fourth {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  margin-top: 5%;
 }
