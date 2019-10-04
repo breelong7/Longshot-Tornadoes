@@ -18,10 +18,11 @@ Lastly dont forget to visit our About Us page.Learn more about our team members 
 
 OS X Windows & Linux:
 
-```sh
 clone repo to local machine
-```
+
+```sh
 git clone https://breelong7.github.io/Longshot-Tornadoes/
+```
 
 
 ## Release History
