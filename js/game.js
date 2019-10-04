@@ -21,7 +21,7 @@ function submitAnswer() {
 
 
   function correctAnswer(correctStringNo, qNumber) {
-    return ("The correct answer for question #" + qNumber +
+    return ('The correct answer for question #' + qNumber +
             (document.getElementById(correctStringNo).innerHTML));
   }
 
@@ -35,10 +35,24 @@ function submitAnswer() {
   }
 
 
-    var displayScore = "Your Score: " + score + "/" + counter;
 
-    if (score === counter) {
-        displayScore = displayScore + "Awesome if you have won buzzed quiz"
-    };
-    document.getElementById('userScore').innerHTML = displayScore;
+  var displayScore = 'Your Score: ' + score + '/' + counter;
+  //var couponImage = "img/Beer.jpg";
+  var img = new Image();   // Create new img element
+  img.src = 'img/Beer.jpg';
+  if (score === counter) {
+    displayScore = displayScore + 'Awesome if you have won buzzed quiz';
+    var displayImageElement =  document.getElementById('displayImage');
+    var h2El = document.createElement('h2');
+    h2El.textContent = `You have won ${img.src}`;
+    displayImageElement.appendChild(h2El);
+  }
+  document.getElementById('userScore').innerHTML = displayScore;
 }
+
+
+function refreshPage(){
+  window.location.reload();
+}
+
+
