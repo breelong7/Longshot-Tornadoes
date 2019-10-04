@@ -1,5 +1,6 @@
 'use strict';
 
+// eslint-disable-next-line no-unused-vars
 function submitAnswer() {
 
   function answerScore(qName) {
@@ -20,13 +21,6 @@ function submitAnswer() {
   var score = (answerScore('question1') + answerScore('question2') + answerScore('question3') + answerScore('question4'));
 
 
-  function correctAnswer(correctStringNo, qNumber) {
-    return ("The correct answer for question #" + qNumber +
-            (document.getElementById(correctStringNo).innerHTML));
-  }
-
-
-
   var countArr = document.getElementsByClassName('question');
 
   var counter = 0;
@@ -35,10 +29,19 @@ function submitAnswer() {
   }
 
 
-    var displayScore = "Your Score: " + score + "/" + counter;
+  var displayScore = 'Your Score: ' + score + '/' + counter;
 
-    if (score === counter) {
-        displayScore = displayScore + "Awesome if you have won buzzed quiz"
-    };
-    document.getElementById('userScore').innerHTML = displayScore;
+  if (score === counter) {
+    displayScore = displayScore + '; Awesome, You have won buzzed quiz!';
+  } else if (score === 3) {
+    displayScore = displayScore + '; You were neatly close!';
+  } else if (score === 2) {
+    displayScore = displayScore + '; Not bad, You are halfway!';
+  } else if (score < 2) {
+    displayScore = displayScore + '; Sorry, Try again!';
+  }
+  document.getElementById('userScore').innerHTML = displayScore;
 }
+
+
+

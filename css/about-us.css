@@ -156,7 +156,7 @@ p {
 .card-front-third, .card-back-third {
   position: absolute;
   width: 250px;
-  height: 900px;
+  height: 370px;
   backface-visibility: hidden;
 }
 /* card front DIV 4 */
