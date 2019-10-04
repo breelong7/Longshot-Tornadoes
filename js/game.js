@@ -21,12 +21,17 @@ function submitAnswer() {
   var score = (answerScore('question1') + answerScore('question2') + answerScore('question3') + answerScore('question4'));
 
 
-  var countArr = document.getElementsByClassName('question');
+ // function correctAnswer(correctStringNo, qNumber) {
+   // return ('The correct answer for question #' + qNumber +
+     //       (document.getElementById(correctStringNo).innerHTML));
+  //}
 
-  var counter = 0;
-  for (var i = 0, length = countArr.length; i < length; i++) {
-    counter++;
-  }
+ // var countArr = document.getElementsByClassName('question');
+
+ // var counter = 0;
+ // for (var i = 0, length = countArr.length; i < length; i++) {
+  //  counter++;
+ // }
 
 
   var displayScore = 'Your Score: ' + score + '/' + counter;
@@ -43,5 +48,21 @@ function submitAnswer() {
   document.getElementById('userScore').innerHTML = displayScore;
 }
 
+ // var displayScore = 'Your Score: ' + score + '/' + counter;
+ //var couponImage = "img/Beer.jpg";
+ // var img = new Image();   // Create new img element
+ // img.src = 'img/Beer.jpg';
+ // if (score === counter) {
+   // displayScore = displayScore + 'Awesome if you have won buzzed quiz';
+  //  var displayImageElement =  document.getElementById('displayImage');
+  //  var h2El = document.createElement('h2');
+  //  h2El.textContent = `You have won ${img.src}`;
+  //  displayImageElement.appendChild(h2El);
+ // }
+ // document.getElementById('userScore').innerHTML = displayScore;
+//}
 
 
+//function refreshPage(){
+//  window.location.reload();
+//}
