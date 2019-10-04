@@ -21,7 +21,6 @@ p {
 .card-front-five section{
     margin: 10%;
 }
-
 .card-one {
     background-color: transparent;
     width: 222px;
@@ -136,7 +135,6 @@ a:link, a:visited, a:hover {
 .card-back-two ul li:hover {
     transform: scale(1.5);
 }
-
 .card-three {
     background-color: transparent;
     width: 111px;
@@ -178,8 +176,7 @@ a:link, a:visited, a:hover {
 }
 .c3 {
     margin-top: 40%;
-}
-  
+} 
 .card-four {
     background-color: transparent;
     width: 200px;
@@ -222,7 +219,6 @@ a:link, a:visited, a:hover {
 .c4{
     margin-top: 40%;
 }
-
 .card-five {
     background-color: transparent;
     width: 77px;
