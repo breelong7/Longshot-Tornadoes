@@ -31,7 +31,11 @@ p {
   float: left;
   margin-bottom: 10px;
 } */
-
+.img-container{
+  width: 700px;
+  height: 960px;
+  background: lightcoral;
+}
 #sian{
   width: 250px;
   height: 250px;
@@ -222,7 +226,7 @@ p {
 }
 
 
-.first-card, .second-card{
+/* .first-card, .second-card{
   display: inline-block;
 }
 .third-card, .fourth-card{
@@ -244,4 +248,4 @@ p {
   .fourth-card{
     float: right;
     margin-right: 27.5%; 
-  }
+  } */
