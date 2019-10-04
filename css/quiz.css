@@ -111,10 +111,6 @@ button {
 button:hover {
   opacity: 1
 }
-/* input[type=radio]:checked + label{
-  visibility: hidden;
-} */
-
 .drink-choice-container{
   width: 80%;
   display: inline-block;

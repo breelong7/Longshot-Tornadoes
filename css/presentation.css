@@ -69,7 +69,6 @@ p {
     margin-top: 10%;
     text-align: left;
 }
-
 a:link, a:visited, a:hover {
     color: white;
     text-decoration: none;
@@ -197,14 +196,17 @@ a:link, a:visited, a:hover {
     transform-style: preserve-3d;
 }
 .card-four:hover .card-inner-four {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+    margin-top: -100px;
 }    
 .card-front-four, .card-back-four {
     position: absolute;
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    margin-right: 20px;
     backface-visibility: hidden;
+    z-index: 9999;
 }
 .card-front-four {
     background: linear-gradient(to bottom left, rgb(217, 167, 103) 40%, rgb(194, 39, 74));
@@ -213,11 +215,51 @@ a:link, a:visited, a:hover {
 .card-back-four {
     border-radius: 50%;
     background-color: rgb(217, 167, 103);
-    color: white;
-    transform: rotateY(180deg);
+    color: black;
+    transform: rotateX(180deg);
 }
 .c4{
     margin-top: 40%;
+}
+.card-back-four ul li{
+    background-color: rgb(217, 167, 103);
+    transition: transform .4s; 
+    margin: 0 auto;
+    height: auto;
+    width: 190%;
+    padding: 2%;
+    margin-top:3%;
+    text-shadow: 
+      -1px -1px 0 rgb(0, 0, 0),
+      1px -1px 0 rgb(0, 0, 0),
+      -1px 1px 0 rgb(0, 0, 0),
+      1px 1px 0 rgb(0, 0, 0);
+      z-index: 9999;
+}
+.card-back-four ul li:hover {
+    transform: scale(1.5);
+    z-index: 9999;
+}
+.list-top{
+    font-weight: bolder;
+    font-size: 120%;
+}
+.ops:hover {
+    text-shadow: 
+      -1px -1px 0 red,
+      1px -1px 0  red,
+      -1px 1px 0  red,
+      1px 1px 0  red;
+}
+.strengths:hover {
+    text-shadow: 
+      -1px -1px 0 green,
+      1px -1px 0  green,
+      -1px 1px 0  green,
+      1px 1px 0  green;
+}
+#last{
+    margin-bottom: 300px;
 }
 .card-five {
     background-color: transparent;
@@ -231,7 +273,7 @@ a:link, a:visited, a:hover {
     margin-bottom: auto;
 }  
 .card-inner-five {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;

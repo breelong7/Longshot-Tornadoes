@@ -13,14 +13,10 @@ if(localStorage.length === 0){
 
 } else {
   console.log('something\'s in LS');
-  //get name
   var localStorageName = localStorage.getItem('name');
   console.log('name stored in local storage', localStorageName);
-  // json Parse
   var parsedName = JSON.parse(localStorageName);
   var slicedName = parsedName.slice(0);
-  //new text generation
-  // eslint-disable-next-line no-useless-escape
   legendEl.textContent = `Still thirsty, ${slicedName}? We\'ve got your back. Just take the quiz!`;
   formEl.appendChild(legendEl);
   labelEl.textContent = `...if you're not ${slicedName}, who the heck are you?!`;
@@ -30,9 +26,7 @@ if(localStorage.length === 0){
 function addFriend(event){
   event.preventDefault();
   var newName = event.target.username.value;
-  // Stringify
   var stringifyedName = JSON.stringify(newName);
-  // local storage set item
   localStorage.setItem('name', stringifyedName);
   console.log('setting a name in LS');
   refreshPage();
@@ -80,13 +74,9 @@ new DrinkNoBuzz('Arnold Palmer');
 new DrinkNoBuzz('Coffee');
 new DrinkNoBuzz('Roy Rogers');
 
-
-//declare function to generate random drink suggestion
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
-//get drink choice container element
 document.getElementById('drink-choice-container');
 
 var alcoholicChoiceEl = document.getElementById('alcoholic');
@@ -101,12 +91,10 @@ nonAlcoholicChoiceEl.addEventListener('click', handleClick);
 
 // drinkChoiceContainerEl.addEventListener('click', handleClick);
 
-
 function handleClick(e) {
   console.log('event target id:', e.target.id);
 
   if (e.target.id === 'alcoholic') {
-    //render alcoholic drink from allAlcoholicDrinksArr
     for (var i = 0; i < allAlcoholicDrinksArr.length; i++) {
       var randomIndex = random(0, allAlcoholicDrinksArr.length - 1);
       alcoholicChoiceEl.alt = allAlcoholicDrinksArr[randomIndex].drinkName;
@@ -122,9 +110,7 @@ function handleClick(e) {
     alcoholicChoiceImgEl.textContent = `${alcoholicChoiceImgEl.src}`;
     buzzResultEl.appendChild(alcoholicChoiceImgEl);
 
-
   } else if (e.target.id === 'non-alcoholic') {
-    //render non-alcoholic drink choice from allNonAlcoholicDrinksArr
     for (var j = 0; j < allNonAlcoholicDrinksArr.length; j++) {
       var randomIndex2 = random(0, allNonAlcoholicDrinksArr.length - 1);
       nonAlcoholicChoiceEl.alt = allNonAlcoholicDrinksArr[randomIndex2].drinkName;
@@ -136,7 +122,5 @@ function handleClick(e) {
 
     nonAlcoholicChoiceImgEl.textContent = `${nonAlcoholicChoiceImgEl.src}`;
     nonBuzzResultEl.appendChild(nonAlcoholicChoiceImgEl);
-
   }
-
 }
