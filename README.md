@@ -21,7 +21,7 @@ OS X Windows & Linux:
 clone repo to local machine
 
 ```sh
-git clone https://breelong7.github.io/Longshot-Tornadoes/
+git clone https://github.com/breelong7/Longshot-Tornadoes.git
 ```
 
 
