@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/quiz.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">   
+  <title>BuzzedFeed</title>
+  <link rel="icon" href="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c093.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+  <header>
+      <a href="presentation.html"><img class="circle-logo" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c093.png"></a>
+      <section class="logo-wrap">
+        <h1 class="logo">Buzze<span class="d">d</span>Fee<span class="d">d</span></h1>
+        <h3 class="motto">Quenching the indecisive thirst one thirsty user at a time</h3>
+      </section>
+    <nav>
+      <ul>
+          <li id="quiz"><a href="index.html">Quiz.</a></li>
+          <li id="recipes"><a href="recipe.html">Drink Recipes.</a></li>
+          <li id="aboutus"><a href="about-us.html">About Us.</a></li>
+          <li id = "buzzedgame"><a href="game.html">Buzzed Game.</a></li>
+      </ul>
+      </div>
+      
+    </nav>
+  </header>
+  <!-- Add everything within the header tags (above) to each page (About us, Drink Recipes. & Quiz) to ensure the style.css file works -->
+  <main>
+  <section>
+    <p class="quiz-type">Drink</p>
+    <p class="instructions">Pick a type of drink & we'll tell you what to order.</p>
+    <p class="subtext">Shake things up a bit.</p>
+  </section>
+
+  <form id="container1">
+  <fieldset>
+    <legend id="legend"></legend>
+    <label id="label"></label>
+  </fieldset>
+</form>
+
+<form id="container2">
+  <fieldset>
+          <input id="input" name = "username" type = "text" placeholder = "Type your name here"/>
+          <input type = "submit" id="submit" name = "submit" value = "Submit a new name."/>
+    </fieldset>
+  </form>
+
+  <div class="drink-choice-container" id="drink-choice-container">
+      <input type="radio" id="na-radio" name="non-alcoholic-radio" value="non-alcoholic-radio">
+      <label for="na-radio"><img id="non-alcoholic" src="img/Soda_shelves.png" alt="shelves stocked with soda" title="non-alcoholic"></label>
+      
+      <input type="radio" id="a-radio" name="alcoholic-radio" value="alcoholic-radio">
+      <label for="a-radio"><img id="alcoholic" src="img/Beer_shelves.png" alt="shelves stocked with beer" title="alcoholic"></label>
+</div>     
+
+
+<div class="resultContainer">
+      <div id="nonbuzzresult">
+        <img id="nonbuzzresultimage" src="" alt="" title="" />
+      </div>
+      
+      <div id="buzzresult" class="buzzresult">
+        <img id="buzzresultimage" src="" alt="" title="" />
+      </div>
+</div>
+    <div class="reset-button">
+    <button id="reset" type="submit"  onClick="refreshPage()">Take the quiz again.</button>
+  </div>
+  </main>
+</body>
+<footer>
+  <p>Be kind to your liver and drink responsibly... or not. I'm not your mom.</p>
+  <script src="js/quiz.js"></script>
+</footer>
+</html>

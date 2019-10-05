@@ -1,0 +1,127 @@
+#top {
+  width: 100%;
+  height: 120px;
+  border: 1px solid grey;
+  background-color: #e7d1d67a;
+  padding: 0px;
+  margin-bottom: 20px;
+  }
+  
+  #top h1 {
+  float: left;
+  color: black;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 48px;
+  }
+  
+  
+  #top img {
+  height: 120px;
+  width: 160px;
+  margin-top: 0px;
+  border-radius: 5px;
+
+ }
+  
+  #top {
+    background-color:#e7d1d67a ;
+    animation-name: recipe;
+    animation-duration: 10s;
+    animation-iteration-count:infinite
+  }
+  
+  @keyframes recipe {
+    0%   {background-color: #e7d1d67a;}
+    20%  {background-color: #e7d1d67a;}
+    40%  {background-color: #eab7b7;}
+    60%  {background-color: #4c4cc3;}
+    80%  {background-color: yellow;}
+    100% {background-color: #7adf7a;}
+  }
+  
+#top img {
+  animation-name: imgtop;
+  background-color: auto;
+  position: relative;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+
+}
+
+@keyframes imgtop {
+  0%   {left:30px; right:685px;}
+  50%  {left:685px; left:685px;}
+  100% {right:685px; left:30px;}
+}
+
+  li img {
+    height: 180px;
+    width: 180px;
+    border: 3px solid gray;
+    margin: 0px auto 0px;
+    background-color: violet;
+    vertical-align: bottom;
+  }
+  
+  li img:hover {
+    opacity:0.8;
+  }
+  
+  
+  main h1 {
+  font-size:30px;
+  font-family: Georgia,sans-serif;
+  font-weight:700;
+  color:#3b9370;
+  }
+
+  h2 {
+      color: rgb(59, 147, 112);
+      padding-top: 15px;
+      font-size: 36px;
+      line-height: 100%;
+      font-weight: 400;
+      margin: 0px 0px 15px;
+  }
+  
+  h3.recipiename {
+      font-size: 15px;
+      padding-bottom: 5px;
+      color: yellowgreen;
+      background-color: grey;
+      width: 186px;
+  }
+  
+  h4.rcptxt {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 15px;
+      color: yellowgreen;
+      width: 186px;
+      background-color: grey;
+  }
+  
+  #cocktailrecipes ul li.rcp {
+      text-align: left;
+      display: inline-block;
+      margin: 0px 0px 10px 10px; 
+  }
+  
+  .Alcoholic ul li {
+  text-align:left;
+  display: inline-block;
+  margin: 0px 0px 10px 10px;
+  }
+  
+  .nonAlcohol ul li {
+  text-align:left;
+  display: inline-block;
+  margin: 0px 0px 10px 10px;
+  }
+  
+  
+  
+  
+  
+  

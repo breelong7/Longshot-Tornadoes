@@ -1,0 +1,239 @@
+
+.img-container{
+  width: 700px;
+  height: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:14%;
+}
+#sian{
+  width: 200px;
+  height: 290px;
+}
+.first-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  z-index: 999999;
+}  
+.card-inner-first {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+  z-index: 999999;
+}
+.first-card:hover .card-inner-first {
+  transform: rotateX(180deg);
+  margin-top: -15%;
+  margin-left: -25%;
+  z-index: 999999;
+}    
+.card-front-first, .card-back-first {
+  position: absolute;
+  width: 250px;
+  height: 225px;
+  backface-visibility: hidden;
+  z-index: 999999;
+}
+.card-front-first {
+  margin-top: 5px;
+  margin-left: 50px;
+  color: black;
+  z-index: 999999;
+}
+.card-back-first {
+  background-color: black;
+  transform: scale(1.25);
+  color: black;
+  transform: rotateX(180deg);
+  z-index: 999999;
+}
+.card-back-first p{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: transform .4s;
+  z-index: 999;
+  padding: 2%;
+}
+.card-back-first p:hover {
+  transform: scale(1.5);
+  z-index: 999999;
+}
+#bree{
+  width: 250px;
+  height: 350px;
+  z-index: 999999;
+}
+.second-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+}  
+.card-inner-second {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+.second-card:hover .card-inner-second {
+  transform: rotateX(180deg);
+  margin-top: 100px;
+  margin-left: 92px;
+  z-index: 999999999;
+}    
+.card-front-second, .card-back-second {
+  position: absolute;
+  width: 350px;
+  height: 325px;
+  margin-bottom: 300px;
+  backface-visibility: hidden;
+}
+.card-front-second {
+  color: black;
+}
+.card-back-second {
+  background-color: transparent;
+  color: black;
+  transform: scale(1.25);
+  z-index: 10000;
+  transform: rotateX(180deg);
+}
+.card-back-second p{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: transform .4s;
+  z-index: 999;
+  padding: 2%;
+}
+.card-back-second p:hover {
+  transform: scale(1.5);
+}
+#shubham{
+  width: 375px;
+  height: 225px;
+  z-index: 999;
+}
+.third-card {
+  background-color: transparent;
+  width: 325px;
+  height: 250px;
+  perspective: 1000px; 
+  z-index: 999;
+}  
+.card-inner-third {
+  position: relative;
+  width: 325px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+  z-index: 999;
+}
+.third-card:hover .card-inner-third {
+  transform: rotateX(180deg);
+  z-index: 999;
+  margin-left: -66px;
+  margin-top:10px;
+}    
+.card-front-third, .card-back-third {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  backface-visibility: hidden;
+  z-index: 999;
+}
+.card-front-third {
+  background: transparent;
+  color: black;
+  z-index: 999;
+}
+.card-back-third {
+  background-color: transparent;
+  transform: scale(1.25);
+  color: black;
+  transform: rotateX(180deg);
+  margin-top:-30%;
+}
+.card-back-third p{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: transform .4s;
+  z-index: 999;
+  padding: 2%;
+}
+.card-back-third p:hover {
+  transform: scale(1.5);
+}
+#james{
+  width: 250px;
+  height: 370px;
+}
+.fourth-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  margin-top: 7%;
+}  
+.card-inner-fourth {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  transition:  0.8s;
+  transform-style: preserve-3d;
+}
+.fourth-card:hover .card-inner-fourth {
+  transform: rotateX(180deg);
+  margin-left: 80px;
+  z-index: 999999;
+}    
+.card-front-fourth, .card-back-fourth {
+  position: absolute;
+  width: 325px;
+  height: 225px;
+  backface-visibility: hidden;
+}
+.card-front-fourth {
+  background: transparent;
+  color: black;
+}
+.card-back-fourth {
+  background-color: transparent;
+  transform: scale(1.25);
+  color: black;
+  transform: rotateX(180deg);
+  margin-top:-10%;
+}
+.card-back-fourth p{
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  transition: transform .4s;
+  z-index: 999;
+  padding: 2%;
+}
+.card-back-fourth p:hover {
+  transform: scale(1.5);
+}
+.first-card, .second-card{
+  display: inline-block;
+}
+.third-card, .fourth-card{
+  display: inline-block;
+  margin-top: 50px; 
+}
+.first-card, .third-card{
+  margin-right: auto;
+  margin-left: 100px;
+}
+.fourth-card{
+    margin-bottom:-55px; 
+    margin-left: -74px;
+} 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="css/reset.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/game.css" type="text/css" rel="stylesheet" /> 
+  <link href="css/about-us.css" type="text/css" rel="stylesheet" />
+  <title>Game Time.</title>
+  <link rel="icon" href="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c093.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+        <header>
+			<a href="presentation.html"><img class="circle-logo" src="http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43c093.png"></a>
+			<section class="logo-wrap">
+              <h1 class="logo">Buzze<span class="d">d</span>Fee<span class="d">d</span></h1>
+              <h3 class="motto">Quenching the indecisive thirst one thirsty user at a time</h3>
+            </section>
+          <nav>
+            <ul>
+              <li id="quiz"><a href="index.html">Quiz.</a></li>
+              <li id="recipes"><a href="recipe.html">Drink Recipes.</a></li>
+              <li id="aboutus"><a href="about-us.html">About Us.</a></li>
+              <li id = "buzzedgame"><a href="game.html">Buzzed Game.</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <h2 class="quizHeader">Take a Buzzed Quiz</h2>
+  
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1.Which country consumes the most amount of alcohol per capita?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="question1" value="1">
+	        <label id="correctString1">Tunisia</label>
+	    	<br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Albania</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Belarus</label>
+	        <br>
+	        <input class="answer" type="radio" name="question1" value="0">
+	        <label>Thailand</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2. What is the world's most popular cuisine?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Indian</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="1">
+	        <label id="correctString2">Italian</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Mexican</label>
+	        <br>
+	        <input class="answer" type="radio" name="question2" value="0">
+	        <label>Chinese</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. World's most popular beverage?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Coffee</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="1">
+	        <label id="correctString3">Tea</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Beer</label>
+	        <br>
+	        <input class="answer" type="radio" name="question3" value="0">
+	        <label>Orange Juice</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. What state has the most bars per capita?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>Montana</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="1">
+	        <label id="correctString4">North Dakota</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>California</label>
+	        <br>
+	        <input class="answer" type="radio" name="question4" value="0">
+	        <label>New Jersey</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitAnswer()"
+          type="submit" value="Submit" />
+    </div>
+  
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+		</div>
+		<div id = "displayImage">
+			<img id="wonimage" src="" alt="" title="" />
+		</div>
+	</div>
+	<button id="reset" type="submit"  onClick="refreshPage()">Try one more time</button>
+       
+</body>
+<footer>
+       
+        <script src="js/game.js"></script>       
+      </footer>
+</html>
