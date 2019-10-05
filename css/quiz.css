@@ -53,6 +53,7 @@ input[type=submit] {
   background-color: rgb(148, 66, 42);
   border: solid 1px white;
   width: 30%;
+  min-width: 10%;
   color: white;
   font-weight: bold;
   padding: 16px 32px;
@@ -114,6 +115,8 @@ button:hover {
 .drink-choice-container{
   width: 80%;
   display: inline-block;
+  min-width: 500px;
+  background: lightblue;
 }
 #non-alcoholic, #alcoholic{ 
   height: 35%;
