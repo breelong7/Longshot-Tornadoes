@@ -1,17 +1,13 @@
 'use strict';
 
-// eslint-disable-next-line no-unused-vars
 function submitAnswer() {
-
   function answerScore(qName) {
     var buttonNumber = document.getElementsByName(qName);
-
     for (var i = 0, length = buttonNumber.length; i < length; i++) {
       if (buttonNumber[i].checked) {
         var answerValue = Number(buttonNumber[i].value);
       }
     }
-
     if (isNaN(answerValue)) {
       answerValue = 0;
     }
@@ -20,26 +16,22 @@ function submitAnswer() {
 
   var score = (answerScore('question1') + answerScore('question2') + answerScore('question3') + answerScore('question4'));
 
+  function correctAnswer(correctStringNo, qNumber) {
+    return ('The correct answer for question #' + qNumber +
+           (document.getElementById(correctStringNo).innerHTML));
+  }
 
- // function correctAnswer(correctStringNo, qNumber) {
-   // return ('The correct answer for question #' + qNumber +
-     //       (document.getElementById(correctStringNo).innerHTML));
-  //}
+  var countArr = document.getElementsByClassName('question');
 
- // var countArr = document.getElementsByClassName('question');
-
- // var counter = 0;
- // for (var i = 0, length = countArr.length; i < length; i++) {
-  //  counter++;
- // }
-
-
+  var counter = 0;
+  for (var i = 0, length = countArr.length; i < length; i++) {
+    counter++;
+  }
   var displayScore = 'Your Score: ' + score + '/' + counter;
-
   if (score === counter) {
-    displayScore = displayScore + '; Awesome, You have won buzzed quiz!';
+    displayScore = displayScore + '; Awesome, You have won buzzed quiz! The house owes you a drink of your choice!';
   } else if (score === 3) {
-    displayScore = displayScore + '; You were neatly close!';
+    displayScore = displayScore + '; You are neatly close!';
   } else if (score === 2) {
     displayScore = displayScore + '; Not bad, You are halfway!';
   } else if (score < 2) {
@@ -48,21 +40,6 @@ function submitAnswer() {
   document.getElementById('userScore').innerHTML = displayScore;
 }
 
- // var displayScore = 'Your Score: ' + score + '/' + counter;
- //var couponImage = "img/Beer.jpg";
- // var img = new Image();   // Create new img element
- // img.src = 'img/Beer.jpg';
- // if (score === counter) {
-   // displayScore = displayScore + 'Awesome if you have won buzzed quiz';
-  //  var displayImageElement =  document.getElementById('displayImage');
-  //  var h2El = document.createElement('h2');
-  //  h2El.textContent = `You have won ${img.src}`;
-  //  displayImageElement.appendChild(h2El);
- // }
- // document.getElementById('userScore').innerHTML = displayScore;
-//}
-
-
-//function refreshPage(){
-//  window.location.reload();
-//}
+function refreshPage(){
+  window.location.reload();
+}
