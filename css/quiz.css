@@ -116,7 +116,6 @@ button:hover {
   width: 80%;
   display: inline-block;
   min-width: 500px;
-  background: lightblue;
 }
 #non-alcoholic, #alcoholic{ 
   height: 35%;
